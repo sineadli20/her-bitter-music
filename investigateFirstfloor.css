@@ -1,0 +1,148 @@
+.container {
+    margin: auto;
+    width: 700px;
+  }
+  
+#title {
+      display: inline-block;
+      font-size: 48px;
+      width: 600px;
+      font-weight: bold;
+  }
+  
+#evidence {
+      font-size: 24px;
+      display: inline-block;
+  }
+  
+#evidence:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.image-box {
+    text-align: center;
+    position: relative;
+}
+
+img {
+    width: 700px;
+    margin: auto;
+    display: block;
+}
+
+#question {
+    background-color: white;
+    color: black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 30px;
+    padding: 10px;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 20px;
+
+    width: 450px;
+
+    display: none;
+}
+
+#security {
+    cursor: default;
+}
+
+#plants {
+    cursor: pointer;
+    display: none;
+}
+
+#choose {
+    text-align: center;
+    padding-top: 40px;
+    display: none;
+}
+
+#left {
+    text-align: center;
+    display: inline-block;
+    width: 10px;
+    margin-right: 20px;
+    padding: 10px;
+    padding-right: 25px;
+    padding-left: 20px;
+    background-color: black;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 48px;
+}
+
+#left:hover {
+    font-weight: bold;
+}
+
+#choices {
+    text-align: center;
+    display: inline-block;
+    width: 240px;
+    border-style: solid;
+    border-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#choices:hover {
+    background-color: white;
+    color: black;
+}
+
+#right {
+    text-align: center;
+    display: inline-block;
+    width: 10px;
+    margin-left: 15px;
+    padding: 10px;
+    padding-right: 25px;
+    padding-left: 20px;
+    background-color: black;
+    border-style: solid;
+    border-color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 48px;
+}
+
+#right:hover {
+    font-weight: bold;
+}
+
+.text-box {
+    background: black;
+    color: white;
+    font-size: 30px;
+    margin: auto;
+    width: 700px;
+    height: 200px;
+}
+  
+.pad {
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
