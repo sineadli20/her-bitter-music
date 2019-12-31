@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+<audio controls>
+    <source src="horse.mp3">
+</audio>
+
+<div class="container" id="container" onclick=mainFunction()>
+
+    <div class="top-bar">
+
+        <div id="title">her bitter music.</div>
+  
+    </div>
+
+    <div class="img-box">
+
+        <img src="images/background/couch.jpeg" id='background-img'>
+
+        <ul id="other-choose"></ul>
+
+        <img id='character-img'>
+
+        <div id="choose">
+            <div id="left" onclick=backAChoice()><</div>
+            <div id="choices" onclick=submitChoice()></div>
+            <div id="right" onclick=forwardAChoice()>></div>
+        </div>
+
+        <div class="text-box" id="text-box">
+
+            <div id="pad">
+            
+                <div id="text"></div>
+                <div id="type-box"><span id="type"></span></div>
+            
+            </div>
+            
+        </div>
+
+        <div id='name'></div>
+
+    </div>
+
+</div>
+
+</body>
+
+<script src="libraries/typed.min.js"></script>
+<script src="A.js"></script>
+<script>
+
+typeWrite();
+
+document.getElementById('container').addEventListener('click', function() {
+    typeWrite();
+}); 
+
+function typeWrite() {
+    document.getElementById('type-box').innerHTML = "";
+    document.getElementById('type-box').innerHTML = '<span id="type"></span>';
+    var typed = new Typed('#type', {
+    stringsElement: '#text',
+    cursorChar: '_',
+    typeSpeed: 15
+});
+}
+
+</script>
+
+</html>

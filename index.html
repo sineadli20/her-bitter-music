@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -11,28 +12,42 @@
   <div class="container">
 
     <div class="title">
-        her<br>
-        bitter<br>
-        music.
-    </div>
-
-    <div class="line">
+        her bitter music.
     </div>
 
     <div class="subtitle">
-        <i>changes were made</i>
+        <i><span id='typed'></span></i>
     </div>
 
-    <div class="start">
-        Start
-    </div>
-
-    <div class="continue">
-        Continue
-    </div>
+    <ul class="menu" id='menu'>
+        <li id='start'>start</li>
+        <li style="visibility: hidden;">continue</li>
+    </ul>
     
   </div>
 
 </body>
 
 </html>
+
+<script src="libraries/typed.min.js"></script>
+
+<script>
+
+    var typed = new Typed('#typed', {
+        strings: ['a murder mystery'],
+        cursorChar: '_',
+        typeSpeed: 60
+    });
+
+    document.getElementById('start').addEventListener("click", 
+    function () {
+        window.location.href = "A.html";
+    })
+
+    /*
+    setTimeout(function() {
+        document.getElementById('menu').style.visibility = "visible"
+    }, 2000 );
+    */
+</script>

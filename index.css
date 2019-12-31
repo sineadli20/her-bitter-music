@@ -1,41 +1,70 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
 
+body {
+    background-color: black;
+}
+  
 .container {
     height: 650px;
-    width: 711px;
+    width: 800px;
 
-    background-color: black;
+    background-color: white;
 
     margin: auto;
-
-    font-family: 'Lato', sans-serif;
 
     position: relative;
 }
 
 .title {
-    position: absolute;
-    left: 100px;
-    top: 90px;
+    color:black;
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
 
-    color: white;
-    font-size: 60px;
-}
-
-.line {
-    position: absolute;
-    left: 104px;
-    top: 330px;
-    width: 180px;
-    border-bottom: 5px solid white;
+    text-align: center;
+    padding-top: 100px;
 }
 
 .subtitle {
-    color: white;
+    color: black;
+    font-family: 'Lato', sans-serif;
     font-size: 30px;
 
+    text-align: center;
+    padding-top: 15px;
+}
+
+.menu {
     position: absolute;
-    text-align: left;
-    left: 100px;
-    top: 350px;
+    margin: auto;
+    left: 210px;
+    right: 0;
+    bottom: 100px;
+}
+
+.menu li {
+    text-align: center;
+
+    border-radius: 30px;
+    
+    width: 200px;
+
+    padding: 15px;
+    margin: 30px;
+
+    border: 5px solid black;
+    background-color: black;
+    color: white;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+
+    list-style-type: none;
+}
+
+.menu li:hover {
+    background-color: #e86f68;
+    border: 5px solid #e86f68;
+    color:white;
+    cursor: pointer;
 }
