@@ -34,7 +34,7 @@ function(){
     if (tabNum > 4) {
         tabNum = 0;
     }
-    document.getElementById('mech').src = 'gifs/'+gifs[tabNum];
+    document.getElementById('mech').src = gifs[tabNum];
     document.getElementById('main-tab').innerHTML = tabNames[tabNum];
     document.getElementById('words').innerHTML = description[tabNum];
 })
